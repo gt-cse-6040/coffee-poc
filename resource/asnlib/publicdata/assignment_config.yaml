@@ -8,4 +8,32 @@ global_imports:
 - module: re
 - module: pandas
   alias: pd
-exercises: {}
+exercises:
+  reverse_dict:
+    num: 0
+    points: 1
+    n_visible_trials: 100
+    n_hidden_trials: 1
+    config:
+      case_file: tc_reverse_dict
+      inputs:
+        d:
+          dtype: ''
+          check_modified: true
+      outputs:
+        error_raised:
+          index: 0
+          dtype: ''
+          check_dtype: true
+          check_col_dtypes: true
+          check_col_order: true
+          check_row_order: false
+          float_tolerance: 1.0e-06
+        rev_d:
+          index: 1
+          dtype: ''
+          check_dtype: true
+          check_col_dtypes: true
+          check_col_order: true
+          check_row_order: false
+          float_tolerance: 1.0e-06
